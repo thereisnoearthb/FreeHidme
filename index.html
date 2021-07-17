@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
 
-    <meta name="title" content="Save Sattal">
+    <meta name="title" content="Free Hidme">
     <meta name="description" content="We, the undersigned, condemn the arrest of 28-year Adivasi rights defender and environmental activist Hidme Markam and demand her immediate release">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -26,20 +26,22 @@
 </head>
 
 <body>
-    
-    <center><img src="https://assets.change.org/photos/5/uu/nn/YVUunnNSfomATTe-800x450-noPad.jpg?1624714128" alt="Free Hidme logo"></center>
+
+    <center><img src="https://assets.change.org/photos/5/uu/nn/YVUunnNSfomATTe-800x450-noPad.jpg?1624714128" width=90% alt="Free Hidme logo"></center>
   <!--<a href="https://twitter.com/search?q=freehidme&src=typed_query&f=live" id="userName">#SaveSattal</a>-->
+  <div class="wrap">
+  <a href="https://www.change.org/p/president-of-india-release-hidme-markam-immediately" target="_blank"><button class="button">Sign the Petition!</button></a>
+  </div>
+
+
     <div id="links">
        <!--<center>
      <a href="https://instagram.com/sattalconservationclub" target="_blank"><img src="https://thereisnoearthb.com/icons/instagram.svg" alt="Instagram icon" width="35" height="35"></a>&nbsp;&nbsp;
       <a href="https://twitter.com/Sattalconserva1" target="_blank"><img src="https://thereisnoearthb.com/icons/twitter.svg" alt="Twitter icon" width="35" height="35"></a>&nbsp;&nbsp;
       </center>-->
-        <div class="wrap">
-        <a href="https://www.change.org/p/president-of-india-release-hidme-markam-immediately" target="_blank"><button class="button">Sign the Petition!</button></a>
-        </div>
-        <br>
-        <a class="link" href="https://www.instagram.com/ar/199335741622264" target="_blank">Use the #FreeHidme instagram filter to spread the word</a>
-        <a class="link" id = "Button1" href="" target="_blank">Loading<br>Awesomeness</a>
+
+        <!--<a class="link" href="https://www.instagram.com/ar/199335741622264" target="_blank">Use the #FreeHidme instagram filter to spread the word</a>-->
+        <a class="link" id = "Button1" href="" target="_blank">.................................</a>
          <a class="link" id = "Button2" href="" target="_blank">...........................</a>
          <a class="link" id = "Button3" href="" target="_blank">.........................</a>
          <a class="link" id = "Button4" href="" target="_blank">.......................</a>
@@ -54,7 +56,13 @@
          <a class="link" id = "Button13" href="" target="_blank">.....</a>
          <a class="link" id = "Button14" href="" target="_blank">...</a>
          <a class="link" id = "Button15" href="" target="_blank">.</a>
-         <a class="link" id = "Button16" href="https://thereisnoearthb.com" target="_blank">This open source website has been created by There Is No Earth B for #FreeHIdme which controls the content. We do not have any political or religious affilitations. With anyone.</a>
+         <a class="link" id = "Button16" href="" target="_blank">.</a>
+         <a class="link" id = "Button17" href="" target="_blank">.</a>
+         <a class="link" id = "Button18" href="" target="_blank">.</a>
+         <a class="link" id = "Button19" href="" target="_blank">.</a>
+         <a class="link" id = "Button20" href="" target="_blank">.</a>
+
+         <a class="link" href="https://thereisnoearthb.com" target="_blank">This open source website has been created by There Is No Earth B for #FreeHidme which controls the content. We do not have any political or religious affilitations. With anyone.</a>
 
 
     </div>
@@ -62,12 +70,12 @@
     <script>
         var sheetreq = new XMLHttpRequest();
         sheetreq.overrideMimeType("application/json");
-        sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/16yE-KB007Xh5_abQr8lBmo3A9X1rS61B2UkiO-ngXkE/1/public/full?alt=json", true);
+        sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/1DtF2FyhZF_4SZphDrYAql_PgMZSaqA4ylcBA93_R0R0/1/public/full?alt=json", true);
         sheetreq.onload  = function() {
            var jsonResponse = JSON.parse(sheetreq.responseText);
            // do something with jsonResponse
              var i;
-             for (i = 2; i < 32 ; i+=2)
+             for (i = 2; i < 60 ; i+=2)
                   {
                     document.getElementById("Button"+(i/2)).innerHTML = jsonResponse.feed.entry[i].content.$t;
                     document.getElementById("Button"+(i/2)).href = jsonResponse.feed.entry[i+1].content.$t;
