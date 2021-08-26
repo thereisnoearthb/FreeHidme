@@ -41,49 +41,14 @@
       </center>-->
 
         <!--<a class="link" href="https://www.instagram.com/ar/199335741622264" target="_blank">Use the #FreeHidme instagram filter to spread the word</a>-->
-        <a class="link" id = "Button1" href="" target="_blank">.................................</a>
-         <a class="link" id = "Button2" href="" target="_blank">...........................</a>
-         <a class="link" id = "Button3" href="" target="_blank">.........................</a>
-         <a class="link" id = "Button4" href="" target="_blank">.......................</a>
-         <a class="link" id = "Button5" href="" target="_blank">.....................</a>
-         <a class="link" id = "Button6" href="" target="_blank">...................</a>
-         <a class="link" id = "Button7" href="" target="_blank">.................</a>
-         <a class="link" id = "Button8" href="" target="_blank">...............</a>
-         <a class="link" id = "Button9" href="" target="_blank">.............</a>
-         <!--<a class="link" id = "Button10" href="" target="_blank">...........</a>
-         <a class="link" id = "Button11" href="" target="_blank">.........</a>
-         <a class="link" id = "Button12" href="" target="_blank">.......</a>
-         <a class="link" id = "Button13" href="" target="_blank">.....</a>
-         <a class="link" id = "Button14" href="" target="_blank">...</a>
-         <a class="link" id = "Button15" href="" target="_blank">.</a>
-         <a class="link" id = "Button16" href="" target="_blank">.</a>
-         <a class="link" id = "Button17" href="" target="_blank">.</a>
-         <a class="link" id = "Button18" href="" target="_blank">.</a>
-         <a class="link" id = "Button19" href="" target="_blank">.</a>
-         <a class="link" id = "Button20" href="" target="_blank">.</a>
--->
-         <a class="link" href="https://thereisnoearthb.com" target="_blank">This open source website has been created by There Is No Earth B for #FreeHidme which controls the content. We do not have any political or religious affilitations. With anyone.</a>
+         <a class="link" id = "Button2" href="https://www.instagram.com/ar/199335741622264" target="_blank">Use the Free Hidme Filter to help spread the word on Instagram</a>
+         <a class="link" id = "Button3" href="https://www.facebook.com/fbcameraeffects/tryit/199335741622264/" target="_blank">Use the filter on Facebook</a>
 
+         <!--<a class="link" href="https://thereisnoearthb.com" target="_blank">This open source website has been created by There Is No Earth B for #FreeHidme which controls the content. We do not have any political or religious affilitations. With anyone.</a>
+-->
 
     </div>
 
-    <script>
-        var sheetreq = new XMLHttpRequest();
-        sheetreq.overrideMimeType("application/json");
-        sheetreq.open('GET', "https://spreadsheets.google.com/feeds/cells/1DtF2FyhZF_4SZphDrYAql_PgMZSaqA4ylcBA93_R0R0/1/public/full?alt=json", true);
-        sheetreq.onload  = function() {
-           var jsonResponse = JSON.parse(sheetreq.responseText);
-           // do something with jsonResponse
-             var i;
-             for (i = 2; i < 60 ; i+=2)
-                  {
-                    document.getElementById("Button"+(i/2)).innerHTML = jsonResponse.feed.entry[i].content.$t;
-                    document.getElementById("Button"+(i/2)).href = jsonResponse.feed.entry[i+1].content.$t;
-                  }
-
-        };
-        sheetreq.send(null);
-    </script>
 
 </body>
 </html>
